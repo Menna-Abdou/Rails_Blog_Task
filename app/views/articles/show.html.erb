@@ -1,0 +1,13 @@
+<h1>Article</h1>
+<h1><%= @article.title %></h1>
+<p>Body : <%= @article.body %></p>
+<p>Status : <%= @article.status %></p>
+<hr/>
+
+
+<h2>Comments</h2>
+<%= render @article.comments %>
+<hr/>
+<h2>Add a comment:</h2>
+<%= render 'comments/form' %>
+                
